@@ -13,6 +13,7 @@ import java.util.List;
 public class ShoppingListService {
     private final ShoppingListRepository shoppingListRepository;
 
+
     public List<PurchaseEntity> getPurchase(List<Long> ids){
         if(ids == null){
             return (List<PurchaseEntity>) shoppingListRepository.findAll();
